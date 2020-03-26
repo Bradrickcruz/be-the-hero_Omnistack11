@@ -1,0 +1,35 @@
+''' ERRO CANNOT GET '/'
+o erro "CANNOT get /" significa que nao foi dada nenhuma rota inicial para o app
+para dar uma rota, usa-se o metodo GET com o argumento do caminho. o primerio caminho é a '/'
+'''
+
+''' METODOS HTTP
+- GET:      Busca/lista informações do BACK
+- POST:     Cria informaçoes no BACK com base ou nao em informações vindas do FRONT
+- PUT:      Altera informações no BACK
+- DELETE:   Exclui informações no BACK
+'''
+
+''' TIPOS DE PARAMETROS
+- query param:  nomeados e enviados pela rota depois de um '?' aglomerados por '&', usados para filtros, paginação, etc
+    const param = request.query;
+- route param:  parametro utilizado para identificar recursos, um por rota 
+    const param = request.params;
+- body request: corpo da requisição,utilizado para criar ou alterar informações do server side
+    const param = request.body;
+'''
+
+''' BANCOS DE DADOS
+usaremos do SQLit, um banco de dados relacional simples
+
+no JAVASCRIPT, podemos acessar as informações do BD pelo
+    DRIVER DO BANCO USANDO QUERIES: "SELECT * FROM TABLE WHERE 1"
+    QUERY BUILDER DO JAVASCRIPT:    table("table").select("*").where("1"); <- melhor forma, pois é compativel com todos os BANCOS
+'''
+
+''' KNEX instalação e execução
+npm install knex
+npm install sqlite3
+
+npx knex init (dentro da pasta do projeto)
+'''
