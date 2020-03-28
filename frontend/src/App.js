@@ -1,7 +1,7 @@
 // é importante que cada componente tenha seu arquivo JS, com o mesmo nome e escrito com primeira letra maiuscula
 import React from 'react';
 import "./global.css";
-import Logon from "./pages/Logon"
+import Routes from "./routes";
 
 // um componente no react nada mais é do que uma funçao que returna JSX
 function App() {
@@ -21,7 +21,7 @@ function App() {
   return (
     // HTML escrito dentro de javascript é chamado de JSX (Javascript XML)
     <div>
-      <Logon />
+      <Routes />
     </div>
   );
 }
