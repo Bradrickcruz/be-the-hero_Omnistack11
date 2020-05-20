@@ -11,3 +11,6 @@ app.use(routes);                        // usa da variavel routes
 app.listen(3333); // a aplicação rodará no endereço 'localhost:3333'
 
 //a aplicação pode ser executada pelo terminal com o comando 'node index.js' se estiver dentro da pasta do arquivo
+
+
+// a7412e58 ANIMAD
